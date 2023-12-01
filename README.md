@@ -8,3 +8,10 @@ Sample applications are available for the other frameworks here:
 * FastAPI [https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart](https://github.com/Azure-Samples/msdocs-python-fastapi-webapp-quickstart)
 
 If you need an Azure account, you can [create one for free](https://azure.microsoft.com/en-us/free/).
+
+Additional Instructions for this error:
+Error: Could not import 'main'.
+
+Since the main app is app.py (not main.py), run this in CMD:  set FLASK_APP=app
+
+For requirements issue, you can run this:  set MATCH_MANIFEST_VERSIONS=false
